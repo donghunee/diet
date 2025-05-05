@@ -425,7 +425,10 @@ const MacroCalculator: React.FC = () => {
           </Title>
 
           <Form layout="vertical" style={{ width: '100%' }}>
-            <Form.Item label="성별" style={{ marginBottom: '12px' }}>
+            <Form.Item
+              label={<Text strong>성별</Text>}
+              style={{ marginBottom: '12px' }}
+            >
               <Radio.Group
                 value={gender}
                 onChange={(e) => setGender(e.target.value)}
@@ -447,7 +450,10 @@ const MacroCalculator: React.FC = () => {
               </Radio.Group>
             </Form.Item>
 
-            <Form.Item label="만 나이" style={{ marginBottom: '12px' }}>
+            <Form.Item
+              label={<Text strong>만 나이</Text>}
+              style={{ marginBottom: '12px' }}
+            >
               <InputNumber
                 value={age}
                 onChange={(value) => setAge(Number(value))}
@@ -458,7 +464,10 @@ const MacroCalculator: React.FC = () => {
               />
             </Form.Item>
 
-            <Form.Item label="키(cm)" style={{ marginBottom: '12px' }}>
+            <Form.Item
+              label={<Text strong>키(cm)</Text>}
+              style={{ marginBottom: '12px' }}
+            >
               <InputNumber
                 value={height}
                 onChange={(value) => setHeight(Number(value))}
@@ -469,7 +478,10 @@ const MacroCalculator: React.FC = () => {
               />
             </Form.Item>
 
-            <Form.Item label="몸무게(kg)" style={{ marginBottom: '12px' }}>
+            <Form.Item
+              label={<Text strong>몸무게(kg)</Text>}
+              style={{ marginBottom: '12px' }}
+            >
               <InputNumber
                 value={weight}
                 onChange={(value) => setWeight(Number(value))}
@@ -480,7 +492,10 @@ const MacroCalculator: React.FC = () => {
               />
             </Form.Item>
 
-            <Form.Item label="활동량" style={{ marginBottom: '12px' }}>
+            <Form.Item
+              label={<Text strong>활동량</Text>}
+              style={{ marginBottom: '12px' }}
+            >
               <Radio.Group
                 value={activity}
                 onChange={(e) => setActivity(e.target.value)}
@@ -573,8 +588,11 @@ const MacroCalculator: React.FC = () => {
                 </Space>
               </Card>
             </Form.Item>
-
-            <Form.Item label="목표" style={{ marginBottom: '12px' }}>
+            <Divider />
+            <Form.Item
+              label={<Text strong>목표</Text>}
+              style={{ marginBottom: '12px' }}
+            >
               <Radio.Group
                 value={goal}
                 onChange={(e) => setGoal(e.target.value)}
@@ -703,7 +721,7 @@ const MacroCalculator: React.FC = () => {
             </Card>
             <Divider />
             <Form.Item
-              label="탄단지 비율 설정"
+              label={<Text strong>탄단지 비율 설정</Text>}
               style={{ marginBottom: '12px' }}
             >
               <Radio.Group
@@ -936,7 +954,6 @@ const MacroCalculator: React.FC = () => {
                               onChange={handleFatChange}
                               disabled={lockedMacro === 'fat'}
                             />
-
                             <div style={{ marginTop: '8px' }}>
                               <Text type="secondary">
                                 총합: {carbRatio + proteinRatio + fatRatio}%

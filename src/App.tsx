@@ -679,7 +679,7 @@ const MacroCalculator: React.FC = () => {
                       height: '100%',
                     }}
                   >
-                    <Text type="secondary">탄수화물</Text>
+                    <Text>🍚 탄수화물</Text>
                     <div style={{ fontSize: '18px', fontWeight: 600 }}>
                       {result.carbs}g
                     </div>
@@ -695,7 +695,7 @@ const MacroCalculator: React.FC = () => {
                       height: '100%',
                     }}
                   >
-                    <Text type="secondary">단백질</Text>
+                    <Text>🥩 단백질</Text>
                     <div style={{ fontSize: '18px', fontWeight: 600 }}>
                       {result.protein}g
                     </div>
@@ -711,7 +711,7 @@ const MacroCalculator: React.FC = () => {
                       height: '100%',
                     }}
                   >
-                    <Text type="secondary">지방</Text>
+                    <Text>🥑 지방</Text>
                     <div style={{ fontSize: '18px', fontWeight: 600 }}>
                       {result.fat}g
                     </div>

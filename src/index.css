@@ -17,6 +17,7 @@ body {
   padding: 0;
   min-width: 320px;
   min-height: 100vh;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* 모바일 레이아웃 최적화 */
@@ -35,5 +36,9 @@ body {
 
   .ant-form-item-label > label {
     font-size: 14px;
+  }
+
+  * {
+    -webkit-tap-highlight-color: transparent;
   }
 }
